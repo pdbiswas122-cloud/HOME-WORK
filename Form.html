@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div style="border:2px solid blue; max-width: 300px;">
+    <form action="index.html" method="post" enctype="multipart/form-data">
+         <!-- NAME -->
+        <label for="name">Name: </label>
+        <input type="text" id="name" minlength="3" maxlength="5" placeholder="Barnali" required >
+       <br>
+        <!-- PASSWORD -->
+        <label for="pass">Password: </label>
+        <input type="password" id="pass"  minlength="3" maxlength="5" placeholder="ndavn@34sndb#">
+        <br>
+         <!-- EMAIL -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="barnali@email.com">
+        <br>
+         <!-- telephone -->
+        <label for="tel">telephone</label>
+        <input type="tel" id="tel" pattern="[0-9]{10}">
+        <br>
+         <!-- Date -->
+        <label for="date">BirthDay</label>
+        <input type="date" id="date">
+        <br>
+         <!-- AGE -->
+        <label for="age">age</label>
+        <input type="number" id="age" min="10" max="30" value="15" >
+        <br>
+         <!-- GENDER / Radio-->
+        <label for="gender">Gender: </label>
+        <Label for="male" >Male</Label>
+        <input type="radio" id="male" value="male" name="gender">
+        <Label for="Female">Female</Label>
+        <input type="radio" id="Female" value="Female" name="gender">
+        <br>
+         <!-- Selection /hobby-->
+        <label for="hobby">Hobby</label>
+        <select name="hobby" id="hobby">
+            <option value="art">Art</option>
+            <option value="music">Music</option>
+            <option value="dance">Dance</option>
+        </select>
+        <br>
+        <!-- textarea -->
+        <label for="add">Address</label>
+        <textarea id="add" rows="4" cols="20"></textarea>
+        <br>
+        <!-- File Upload -->
+        <label for="file">Upload file</label>
+        <input type="file" id="file">
+        <br>
+        <!-- search -->
+        <label for="sub">Search</label>
+        <input type="search">
+        <br>
+        
+        <!-- <Label for="course" >Do u purchase any course before?</Label> -->
+        <!-- <input type="radio" id="course" value="yes" > -->
+        <!-- <br> -->
+        <Label for="course" >Do u purchase any course before?</Label>
+        <input type="checkbox" id="course" value="yes" >
+        <br>
+        <!-- reset -->
+        <button type="reset">reset</button>
+        <br>
+        <!-- submit -->
+        <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>
+
